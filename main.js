@@ -32,4 +32,6 @@ const $sectionColumn = document.querySelector('#section-column');
 $sectionColumn.insertAdjacentHTML('beforeend', $htmlSectionRow);
 
 const $sectionRow = document.querySelector('#section-row');
-$sectionRow.insertAdjacentHTML('beforeend', $htmlCardDash);
+for(let i = 0; i <= 4; i++){
+    $sectionRow.insertAdjacentHTML('beforeend', $htmlCardDash);
+}
