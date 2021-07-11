@@ -1,0 +1,351 @@
+
+/* ======== Menu ======== */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: var(--white);
+    float: left;
+    border-right: 1px solid var(--light-grey);
+    
+}
+
+/* ======== Principal ======== */
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 2rem;
+    width: 80%;
+    float: right;
+}
+
+.legendas {
+    width: 90%;
+    background: var(--white);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.legendas > h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.content-legenda, .legenda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.text-legenda {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.cards-conta, .cards-cobranca {
+    width: 90%;
+    text-align: left;
+}
+
+.cards-conta > h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2.4rem;
+}
+
+.cards-cobranca > h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2.4rem;
+}
+
+.cards-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--white);
+    padding: 2.4rem;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.total, .qtd {
+    font-weight: bold;
+}
+
+.total1 {
+    color: var(--green);
+}
+
+.total2 {
+    color: var(--orange);
+}
+
+.total3 {
+    color: var(--blue);
+}
+
+.total4 {
+    color: var(--purple);
+}
+
+/* ======== Seção tabela ======== */
+.s_tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 1.6rem;
+    width: 90%;
+    height: 100px;
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.s_tabela > h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contas {
+    background: var(--white);
+    height: 100%;
+}
+
+/* ======== Tabela ======== */
+
+.tabela {
+    width: 100%;
+    background: var(--white);
+    text-align: left;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-spacing: 0;
+}
+
+th, td {
+    font-size: 1.4rem;
+    padding: .4rem;
+}
+
+th {
+    font-weight: bold;
+    background: #f3f3f3;
+}
+
+/* tr:nth-child(even){
+    background: #f3f3f3;
+} */
+
+tr:hover {
+    background: #f3f3f3;
+}
+
+
+
+.vencimento {
+    font-weight: bold;
+}
+
+.vencimento.vencido {
+    color: var(--red);
+}
+
+.vencimento.pago {
+    color: var(--green);
+}
+
+.vencimento.pendente {
+    color: var(--yellow);
+}
+
+.btn_tb {
+    padding: .8rem;
+    font-size: 1.2rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* ======== Modal ======== */
+.modal-overlay-conta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .1s ease-in;
+    z-index: 999;
+}
+
+.modal-overlay-conta.active-conta {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content-conta {
+    width: 500px;
+    padding: 2.4rem;
+    background: var(--white);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px solid var(--purple);
+}
+
+
+.input-group.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_modal {
+    width: 48%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.cancelar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--red);
+    color: var(--red);
+    opacity: 0.6;
+}
+
+.salvar {
+    background: var(--green);
+    color: var(--white);
+}
+
+/* ======== Modal Cobrança ======== */
+.modal-overlay-cobranca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .1s ease-in;
+    z-index: 999;
+}
+
+.modal-overlay-cobranca.active-cobranca {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content-cobranca {
+    width: 500px;
+    padding: 2.4rem;
+    background: var(--white);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px solid var(--purple);
+}
+
+
+.input-group.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_modal {
+    width: 48%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.cancelar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--red);
+    color: var(--red);
+    opacity: 0.6;
+}
+
+.salvar {
+    background: var(--green);
+    color: var(--white);
+}
+
+small {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--purple);
+    letter-spacing: 1px;
+}

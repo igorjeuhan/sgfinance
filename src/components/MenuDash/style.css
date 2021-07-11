@@ -1,0 +1,13 @@
+/* ======== Menu ======== */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    background: var(--white);
+    border-right: 1px solid var(--light-grey);
+    
+}

@@ -1,0 +1,17 @@
+Components:
+Header
+Menu
+Card
+Button
+
+
+
+
+Título
+descrição
+Status: Pago, pendente e vencido icones
+Data de vencimento: exemplo 09/08/2021
+cobrança de crediário
+filtro de pesquisa para Laíne, barra de pesquisa
+
+Legenda
