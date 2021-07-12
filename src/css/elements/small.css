@@ -1,0 +1,7 @@
+small {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--purple);
+    letter-spacing: 1px;
+}

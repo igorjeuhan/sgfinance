@@ -4,6 +4,7 @@ import MenuDash from './src/components/MenuDash';
 import SectionColumn from './src/components/objects/SectionColumn';
 import SectionCards from './src/components/objects/SectionCards';
 import SubtitleDash from './src/components/SubtitleDash';
+import ModalDash from './src/components/ModalDash';
 
 //Importando o css do Settings
 import './src/css/generic/reset.css';
@@ -13,6 +14,7 @@ import './src/css/settings/colors.css';
 import './src/css/elements/base.css';
 import './src/css/elements/patternElements.css';
 import './src/css/elements/icons.css';
+import './src/css/elements/small.css';
 
 //Montando o layout principal
 const $root = document.querySelector('#root');
@@ -22,12 +24,16 @@ const $htmlSectionColumn = SectionColumn();
 const $htmlSubtitleDash = SubtitleDash();
 const $htmlSectionCards = SectionCards(4);
 
+const $htmlModalDash = ModalDash();
+
 $root.insertAdjacentHTML(
     "beforeend",
     `
         ${$htmlHeaderDash}
         ${$htmlMenuDash}
         ${$htmlSectionColumn}
+
+        ${$htmlModalDash}
     ` 
 );
 

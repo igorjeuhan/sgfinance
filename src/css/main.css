@@ -188,83 +188,6 @@ tr:hover {
     cursor: pointer;
 }
 
-/* ======== Modal ======== */
-.modal-overlay-conta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .1s ease-in;
-    z-index: 999;
-}
-
-.modal-overlay-conta.active-conta {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content-conta {
-    width: 500px;
-    padding: 2.4rem;
-    background: var(--white);
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-}
-
-label {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-input {
-    font-size: 1.2rem;
-    padding: 1rem;
-    border: 1px solid var(--purple);
-}
-
-
-.input-group.actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.btn_modal {
-    width: 48%;
-    height: 50px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.cancelar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--red);
-    color: var(--red);
-    opacity: 0.6;
-}
-
-.salvar {
-    background: var(--green);
-    color: var(--white);
-}
-
 /* ======== Modal Cobrança ======== */
 .modal-overlay-cobranca {
     display: flex;
@@ -340,12 +263,4 @@ input {
 .salvar {
     background: var(--green);
     color: var(--white);
-}
-
-small {
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--purple);
-    letter-spacing: 1px;
 }
