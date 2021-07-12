@@ -1,8 +1,8 @@
 //Importando os componentes
 import HeaderDash from './src/components/HeaderDash';
 import MenuDash from './src/components/MenuDash';
-import SectionColumn from './src/components/SectionColumn';
-import SectionRow from './src/components/SectionRow';
+import SectionColumn from './src/components/objects/SectionColumn';
+import SectionCards from './src/components/objects/SectionCards';
 import CardDash from './src/components/CardDash';
 
 //Importando o css do Settings
@@ -20,7 +20,7 @@ const $root = document.querySelector('#root');
 const $htmlHeaderDash = HeaderDash();
 const $htmlMenuDash = MenuDash();
 const $htmlSectionColumn = SectionColumn();
-const $htmlSectionRow = SectionRow();
+const $htmlSectionCards = SectionCards();
 const $htmlCardDash = CardDash();
 
 $root.insertAdjacentHTML('beforeend', $htmlHeaderDash);
@@ -29,9 +29,8 @@ $root.insertAdjacentHTML('beforeend', $htmlSectionColumn);
 
 //Incluindo componentes dentro de outros componentes
 const $sectionColumn = document.querySelector('#section-column');
-$sectionColumn.insertAdjacentHTML('beforeend', $htmlSectionRow);
+$sectionColumn.insertAdjacentHTML('beforeend', $htmlSectionCards);
+//Busca a seção dos cards e insere a quantidade de cards passando o valor por parâmetro
+const $sectionCards = document.querySelector('#section-cards');
+$sectionCards.insertAdjacentHTML('beforeend', $htmlCardDash.repeat(4));
 
-const $sectionRow = document.querySelector('#section-row');
-for(let i = 0; i <= 4; i++){
-    $sectionRow.insertAdjacentHTML('beforeend', $htmlCardDash);
-}

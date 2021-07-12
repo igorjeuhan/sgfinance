@@ -2,12 +2,13 @@
 import './style.css';
 
 //Componente
-const SectionRow = () => {
+const SectionCards = () => {
+
     return `
-        <div class="section-row" id="section-row">
+        <div class="section-cards" id="section-cards">
         </div>
     `;
 }
 
 //Exportando o componente
-export default SectionRow;
+export default SectionCards;
