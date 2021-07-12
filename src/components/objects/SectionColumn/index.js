@@ -5,7 +5,7 @@ import './style.css';
 const SectionColumn = () => {
     return `
         <section class="section-column" id="section-column">
-            <h2>Contas</h2>
+            
         </section>
     `;
 }
