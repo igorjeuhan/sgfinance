@@ -4,8 +4,8 @@ import './style.css';
 //Componente
 const ModalDash = () => {
     return `
-        <section class="modal-overlay-conta">
-            <div class="modal-content-conta">
+        <section class="modal-overlay conta">
+            <div class="modal-content conta">
                 <h2>Adicione a conta</h2>
                 <form action="#">
                     <div class="input-group">
@@ -26,8 +26,8 @@ const ModalDash = () => {
                         <small>Data de vencimento</small>
                     </div>
                     <div class="input-group actions">
-                        <a href="#" onclick="ModalConta.close()" class="btn_modal cancelar">Cancelar</a>
-                        <button class="btn_modal salvar">Salvar</button>
+                        <a href="#" onclick="ModalConta.close()" class="btn-modal cancelar">Cancelar</a>
+                        <button class="btn-modal salvar">Salvar</button>
                     </div>
                 </form>
             </div>

@@ -1,4 +1,4 @@
-/* ======== Modal ======== */
+/* ======== Modal Cobrança ======== */
 .modal-overlay {
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
     z-index: 999;
 }
 
-.modal-overlay.active-conta {
+.modal-overlay.active-cobranca {
     opacity: 1;
     visibility: visible;
 }
@@ -68,10 +68,6 @@ input {
     border: 2px solid var(--red);
     color: var(--red);
     opacity: 0.6;
-}
-
-.cancelar:hover {
-    opacity: 1;
 }
 
 .salvar {

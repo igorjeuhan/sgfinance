@@ -4,12 +4,12 @@ import './style.css';
 //Componente
 const MenuDash = () => {
     return ` 
-        <nav>
+        <nav class="menu">
             <ul>
-                <li><a href=""><img class="icon-dash" src="src/images/icons/dash.svg" alt="Ícone de dashboard" title="Dashboard">Dashboard</a></li>
-                <li><a href=""><img class="icon-dash" src="src/images/icons/list.svg" alt="Ícone de lista" title="Contas">Contas</a></li>
-                <li><a href=""><img class="icon-dash" src="src/images/icons/coust.svg" alt="Ícone de dinheiro" title="Cobranças">Cobranças</a></li>
-                <li><a href=""><img class="icon-dash" src="src/images/icons/exit.svg" alt="Ícone de logout" title="Sair">Sair</a></li>
+                <li class="menu-option"><a href="">Dashboard</a></li>
+                <li class="menu-option"><a href="">Contas</a></li>
+                <li class="menu-option"><a href="">Cobranças</a></li>
+                <li class="menu-option"><a href="">Sair</a></li>
             </ul>
         </nav>`;
 }

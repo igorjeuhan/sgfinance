@@ -1,4 +1,4 @@
 /* ======== Design padrão - componentes ======== */
-.m-button, .card-content, .s-tabela, .tabela, th, tr, .btn-tb, input, .modal-button, .modal-content-conta, .legendas {
+.m-button, .card-content, .table-dash, th, tr, .btn-tb, input, .modal-button, .modal-content-conta, .legendas {
     border-radius: 4px;
 }

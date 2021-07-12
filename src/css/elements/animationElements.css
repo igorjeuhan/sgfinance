@@ -1,0 +1,25 @@
+.header-content, .menu {
+    opacity: 0;
+    animation: fadeIn .3s ease-in forwards;
+}
+
+.legendas-dash, .section-cards, .section-table {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: slideTop .3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

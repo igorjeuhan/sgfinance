@@ -6,7 +6,7 @@ const HeaderDash = () => {
     <header class="header-content">
         <h1>Dashboard</h1>
         <button onclick="ModalConta.open()" class="modal-button conta">+ Conta</button>
-        <button onclick="ModalCobranca.open()" class="modal-button cobranca">+ Cobrança</button>
+        <button onclick="ModalConta.open()" class="modal-button cobranca">+ Cobrança</button>
     </header>
     `;
 }

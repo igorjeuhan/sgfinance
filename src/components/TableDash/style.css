@@ -1,0 +1,74 @@
+/* ======== Seção tabela ======== */
+.section-table {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 1.6rem;
+    width: 90%;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.section-table > h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.contas {
+    background: var(--white);
+    height: 100%;
+}
+
+/* ======== Tabela ======== */
+
+.table-dash {
+    width: 100%;
+    background: var(--white);
+    text-align: left;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-spacing: 0;
+}
+
+th, td {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+
+th {
+    padding: 1rem;
+    font-weight: bold;
+    background: #f3f3f3;
+}
+
+tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+tr:hover {
+    background: #f3f3f3;
+}
+
+.vencimento {
+    font-weight: bold;
+}
+
+.vencimento.vencido {
+    color: var(--red);
+}
+
+.vencimento.pago {
+    color: var(--green);
+}
+
+.vencimento.pendente {
+    color: var(--yellow);
+}
+
+.btn-tb {
+    padding: .8rem;
+    font-size: 1.2rem;
+    background: transparent;
+    cursor: pointer;
+}
