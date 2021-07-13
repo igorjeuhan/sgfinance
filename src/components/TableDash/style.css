@@ -24,25 +24,22 @@
 
 .table-dash {
     width: 100%;
-    background: var(--white);
+    /* background: var(--white); */
     text-align: left;
     box-shadow: var(--shadow);
     padding: 1rem;
-    border-spacing: 0;
+    border-spacing: 0 0.5rem;
 }
 
 th, td {
     padding-left: 1rem;
     font-size: 1.4rem;
+    background: var(--white);
 }
 
 th {
     padding: 1rem;
     font-weight: bold;
-    background: #f3f3f3;
-}
-
-tr:nth-child(even){
     background: #f3f3f3;
 }
 
